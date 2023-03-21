@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- config value
+ * Copyright (C) 2018 Huawei Inc.
+ *
+-->
+<gamesched_platform_config version="1.0">
+    <cpu_domain_list para_size="2">
+        <mCpuDomains id="0">
+            <numOfCpus>4</numOfCpus>
+            <cpuMask>f</cpuMask>
+            <cpuIds>0 1 2 3</cpuIds>
+            <numOfFreqs>6</numOfFreqs>
+            <freqs>509 1018 1210 1402 1556 1690</freqs>
+            <scalingGovernor>schedutil</scalingGovernor>
+            <cpuType>armv8_pmuv3</cpuType>
+        </mCpuDomains>
+        <mCpuDomains id="1">
+            <numOfCpus>4</numOfCpus>
+            <cpuMask>f0</cpuMask>
+            <cpuIds>4 5 6 7</cpuIds>
+            <numOfFreqs>9</numOfFreqs>
+            <freqs>682 1018 1210 1364 1498 1652 1863 2093 2362</freqs>
+            <scalingGovernor>schedutil</scalingGovernor>
+            <cpuType>armv8_pmuv3</cpuType>
+        </mCpuDomains>
+    </cpu_domain_list>
+
+    <pmu_event_list para_size="4">
+        <mPmuEvents id="0">
+            <rawId>8</rawId>
+            <name>Instructions</name>
+            <normalizeCoef>1000000</normalizeCoef>
+            <predictorCreateFunc>CreatRLPredictor</predictorCreateFunc>
+        </mPmuEvents>
+        <mPmuEvents id="1">
+            <rawId>c0</rawId>
+            <name>LF Stall</name>
+            <normalizeCoef>1000000</normalizeCoef>
+            <predictorCreateFunc>CreatMeanValuePredictor</predictorCreateFunc>
+        </mPmuEvents>
+        <mPmuEvents id="2">
+            <rawId>d8</rawId>
+            <name>LS IQ Full</name>
+            <normalizeCoef>1000000</normalizeCoef>
+            <predictorCreateFunc>CreatMeanValuePredictor</predictorCreateFunc>
+        </mPmuEvents>
+        <mPmuEvents id="3">
+            <rawId>d9</rawId>
+            <name>DP IQ Full</name>
+            <normalizeCoef>1000000</normalizeCoef>
+            <predictorCreateFunc>CreatMeanValuePredictor</predictorCreateFunc>
+        </mPmuEvents>
+    </pmu_event_list>
+
+    <counter_events_list para_size="1">
+        <mCounterEvents id="0">
+            <rawId>6</rawId>
+            <name>Gpu Active</name>
+            <normalizeCoef>1000000</normalizeCoef>
+            <predictorCreateFunc>nullptr</predictorCreateFunc>
+        </mCounterEvents>
+    </counter_events_list>
+
+    <ddr_info_list para_size="1">
+        <mDdrInfo id="0">
+            <ddrFreq>415 830 1244 1866</ddrFreq>
+            <ddrBws>3984 7968 11942 17914</ddrBws>
+            <ddrBwsLowThre>3984 7968 11942 17914</ddrBwsLowThre>
+        </mDdrInfo>
+    </ddr_info_list>
+
+    <low_limit_freqs_list para_size="1">
+        <mLowLimitFreqs id="0">
+            <lpCpuFreq>0 0 0</lpCpuFreq>
+            <pfCpuFreq>0 0 0</pfCpuFreq>
+            <gpuFreq>0 0 0</gpuFreq>
+        </mLowLimitFreqs>
+    </low_limit_freqs_list>
+
+    <boost_combs_list para_size="7">
+        <boost_combs id="0">0 1018 415 </boost_combs>
+        <boost_combs id="1">0 1402 415 </boost_combs>
+        <boost_combs id="2">1 1018 415 </boost_combs>
+        <boost_combs id="3">1 1364 1244</boost_combs>
+        <boost_combs id="4">1 1652 1244</boost_combs>
+        <boost_combs id="5">1 1863 1244</boost_combs>
+        <boost_combs id="6">1 2362 1866</boost_combs>
+    </boost_combs_list>
+
+    <thermal_combs_list para_size="2">
+        <boost_combs id="0">1 1018 415 </boost_combs>
+        <boost_combs id="1">1 1652 1244</boost_combs>
+    </thermal_combs_list>
+</gamesched_platform_config>

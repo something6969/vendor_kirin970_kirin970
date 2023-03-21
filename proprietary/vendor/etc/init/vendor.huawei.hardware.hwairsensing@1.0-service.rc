@@ -1,0 +1,8 @@
+service airsensging-hal-1-0 /vendor/bin/hw/vendor.huawei.hardware.hwairsensing@1.0-service
+    interface vendor.huawei.hardware.hwairsensing@1.0::IAirSensing default
+    interface vendor.huawei.hardware.hwairsensing.provider@1.0::IAirSensingProvider default
+    oneshot
+    disabled
+    class hal
+    user system
+    group system wifi

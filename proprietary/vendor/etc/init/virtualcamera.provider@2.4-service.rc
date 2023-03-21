@@ -1,0 +1,10 @@
+service virtualcamera-hal-service /vendor/bin/hw/virtualcamera.provider@2.4-service
+    interface vendor.huawei.hardware.camera.vircamera@1.0::IVirCameraChannel virtualcamera.register
+    oneshot
+    disabled
+    class hal
+    user system
+    group camera system
+    ioprio rt 4
+    capabilities SYS_NICE
+    writepid /dev/stune/top-app/tasks

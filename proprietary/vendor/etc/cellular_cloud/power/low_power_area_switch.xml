@@ -1,0 +1,7 @@
+<Config>
+    <PLMN group="46000,46002,46007,46008,46004">
+        <AreaSwitch>false</AreaSwitch>
+        <CityList>
+        </CityList>
+    </PLMN>
+</Config>

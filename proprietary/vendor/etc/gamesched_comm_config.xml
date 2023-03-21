@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- config value
+ * Copyright (C) 2018 Huawei Inc.
+ *
+-->
+<gamesched_config version="1.0">
+    <featureCfg>
+        <mGpuAIEnable>1</mGpuAIEnable>
+        <mGpuAITopEnable>0</mGpuAITopEnable>
+        <mSupportHotplug>1</mSupportHotplug>
+        <mSupportGpuHotplug>0</mSupportGpuHotplug>
+        <mSuppTrackThreadBind>0</mSuppTrackThreadBind>
+        <mSupportCpuFreqLock>0</mSupportCpuFreqLock>
+        <mSupportGpuMargin>1</mSupportGpuMargin>
+        <mSupportOnlineLearning>1</mSupportOnlineLearning>
+        <mUseChangeDdrInterval>0</mUseChangeDdrInterval>
+        <mSupportScAdaptQuota>0</mSupportScAdaptQuota>
+        <mUseYieldThreadDetect>0</mUseYieldThreadDetect>
+        <mSupportL3Profiler>0</mSupportL3Profiler>
+        <mIsLite>0</mIsLite>
+        <mSuppGetDdrOtherVote>0</mSuppGetDdrOtherVote>
+        <mSupportSetL3cPartition>0</mSupportSetL3cPartition>
+        <mSupportRealTime>0</mSupportRealTime>
+        <mSuppCpuBoundDetect>1</mSuppCpuBoundDetect>
+        <mUseRtg>1</mUseRtg>
+        <mSupportAbnFrameDetect>1</mSupportAbnFrameDetect>
+        <mSupportVipThread>1</mSupportVipThread>
+        <mFavorLittleEnable>1</mFavorLittleEnable>
+    </featureCfg>
+
+    <globalCfg>
+        <mDefaultCpuDomain>1</mDefaultCpuDomain>
+        <mNumCpuCores>8</mNumCpuCores>
+        <mGpuTargetLoad>90</mGpuTargetLoad>
+        <mGpuRunLoadRate>96</mGpuRunLoadRate>
+        <mGpuFullLoad>100</mGpuFullLoad>
+        <mGpuWindowSize>6</mGpuWindowSize>
+        <mGpuCoreNum>24</mGpuCoreNum>
+        <mClusterPowerThres>5</mClusterPowerThres>
+        <mClusterProfileThres>12</mClusterProfileThres>
+        <mSgdProfileThres>12</mSgdProfileThres>
+        <mDefaultMaxBindcoreNum>15</mDefaultMaxBindcoreNum>
+        <mMaxAbnCycleCount>500</mMaxAbnCycleCount>
+    </globalCfg>
+
+    <stringCfg>
+        <mGpuCurFreqPath>/sys/class/devfreq/gpufreq/cur_freq</mGpuCurFreqPath>
+        <mGpuUserFreqPath>/sys/class/devfreq/gpufreq/gpu_scene_aware/user_set_freq</mGpuUserFreqPath>
+        <mDdrCurFreqPath>/sys/class/devfreq/ddrfreq/cur_freq</mDdrCurFreqPath>
+        <mPerfCtlPath>/dev/hisi_perf_ctrl</mPerfCtlPath>
+        <mGpuDevPath>/dev/mali0</mGpuDevPath>
+    </stringCfg>
+
+    <listCfg>
+        <mGpuFreqs>237 332 415 550 667 767</mGpuFreqs>
+    </listCfg>
+
+</gamesched_config>

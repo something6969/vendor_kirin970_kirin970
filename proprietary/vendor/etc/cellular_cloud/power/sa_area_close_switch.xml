@@ -1,0 +1,14 @@
+<Config>
+    <PLMN group="46000,46002,46007,46008,46004">
+        <CityList>
+        </CityList>
+    </PLMN>
+    <PLMN group="46001,46006,46009">
+        <CityList>
+        </CityList>
+    </PLMN>
+    <PLMN group="46003,46011">
+        <CityList>
+        </CityList>
+    </PLMN>
+</Config>

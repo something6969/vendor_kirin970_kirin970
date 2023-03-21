@@ -1,0 +1,2555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alg_store>
+	<alg_chain_record>
+		<module description="preprocess">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_preprocess"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "4"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "4"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+			<rconfig>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</rconfig>
+		</module>
+	</alg_chain_record>
+	<alg_chain_pad_wakeup_5ch>
+		<module description="wakeup interface for pad using 5 mics">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_wakeup"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "5"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "5"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+			<rconfig>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "4"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "4"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</rconfig>
+		</module>
+	</alg_chain_pad_wakeup_5ch>
+	<alg_chain_pad_wakeup_4ch>
+		<module description="wakeup interface for pad using 4 mics">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_wakeup"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "4"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "4"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+			<rconfig>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "4"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "4"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</rconfig>
+		</module>
+	</alg_chain_pad_wakeup_4ch>
+	<alg_chain_pad_wakeup_2ch>
+		<module description="wakeup interface for pad using 2 mics">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_wakeup"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+			<rconfig>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_SOUNDTRIGGER_FAST_DATA"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_SOUNDTRIGGER_FAST_DATA"
+					interlace = "ALL_INTERLACED"
+				/>
+			</rconfig>
+		</module>
+	</alg_chain_pad_wakeup_2ch>
+	<alg_chain_primary_play_48000>
+		<module description="primary play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_primary_play_48000>
+	<alg_chain_direct_play_8000_1ch_16bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="mono to stereo">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_chc"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="16bit to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_8000_1ch_16bit>
+	<alg_chain_direct_play_8000_1ch_32bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="mono to stereo">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_chc"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_8000_1ch_32bit>
+	<alg_chain_direct_play_8000_1ch_float>
+		<module description="float to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_FLOAT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="mono to stereo">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_chc"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_8000_1ch_float>
+	<alg_chain_direct_play_8000_2ch_16bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="16bit to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_8000_2ch_16bit>
+	<alg_chain_direct_play_8000_2ch_32bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_8000_2ch_32bit>
+	<alg_chain_direct_play_8000_2ch_float>
+		<module description="float to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_FLOAT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_8K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_8000_2ch_float>
+	<alg_chain_direct_play_16000_1ch_16bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="mono to stereo">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_chc"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="16bit to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_16000_1ch_16bit>
+	<alg_chain_direct_play_16000_1ch_32bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="mono to stereo">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_chc"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_16000_1ch_32bit>
+	<alg_chain_direct_play_16000_1ch_float>
+		<module description="float to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_FLOAT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="mono to stereo">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_chc"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_16000_1ch_float>
+	<alg_chain_direct_play_16000_2ch_16bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="16bit to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_16000_2ch_16bit>
+	<alg_chain_direct_play_16000_2ch_32bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_16000_2ch_32bit>
+	<alg_chain_direct_play_16000_2ch_float>
+		<module description="float to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_FLOAT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_16K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_16000_2ch_float>
+	<alg_chain_direct_play_24000_1ch_16bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="mono to stereo">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_chc"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="16bit to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_24000_1ch_16bit>
+	<alg_chain_direct_play_24000_1ch_32bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="mono to stereo">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_chc"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_24000_1ch_32bit>
+	<alg_chain_direct_play_24000_1ch_float>
+		<module description="float to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_FLOAT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="mono to stereo">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_chc"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_24000_1ch_float>
+	<alg_chain_direct_play_24000_2ch_16bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="16bit to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_24000_2ch_16bit>
+	<alg_chain_direct_play_24000_2ch_32bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_24000_2ch_32bit>
+	<alg_chain_direct_play_24000_2ch_float>
+		<module description="float to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_FLOAT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_24K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_24000_2ch_float>
+	<alg_chain_direct_play_32000_1ch_16bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="mono to stereo">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_chc"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="16bit to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_32000_1ch_16bit>
+	<alg_chain_direct_play_32000_1ch_32bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="mono to stereo">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_chc"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_32000_1ch_32bit>
+	<alg_chain_direct_play_32000_1ch_float>
+		<module description="float to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_FLOAT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="mono to stereo">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_chc"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_32000_1ch_float>
+	<alg_chain_direct_play_32000_2ch_16bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="16bit to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_32000_2ch_16bit>
+	<alg_chain_direct_play_32000_2ch_32bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_32000_2ch_32bit>
+	<alg_chain_direct_play_32000_2ch_float>
+		<module description="float to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_FLOAT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_32K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_32000_2ch_float>
+	<alg_chain_direct_play_44100_1ch_16bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="mono to stereo">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_chc"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="16bit to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_44100_1ch_16bit>
+	<alg_chain_direct_play_44100_1ch_32bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="mono to stereo">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_chc"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_44100_1ch_32bit>
+	<alg_chain_direct_play_44100_1ch_float>
+		<module description="float to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_FLOAT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="mono to stereo">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_chc"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_44100_1ch_float>
+	<alg_chain_direct_play_44100_2ch_16bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="16bit to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_44100_2ch_16bit>
+	<alg_chain_direct_play_44100_2ch_32bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_44100_2ch_32bit>
+	<alg_chain_direct_play_44100_2ch_float>
+		<module description="float to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_FLOAT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_44_1K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_44100_2ch_float>
+	<alg_chain_direct_play_48000_1ch_16bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="mono to stereo">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_chc"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="16bit to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_48000_1ch_16bit>
+	<alg_chain_direct_play_48000_1ch_32bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="mono to stereo">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_chc"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_48000_1ch_32bit>
+	<alg_chain_direct_play_48000_1ch_float>
+		<module description="float to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_FLOAT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="mono to stereo">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_chc"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "1"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_48000_1ch_float>
+	<alg_chain_direct_play_48000_2ch_16bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="16bit to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_48000_2ch_16bit>
+	<alg_chain_direct_play_48000_2ch_32bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_48000_2ch_32bit>
+	<alg_chain_direct_play_48000_2ch_float>
+		<module description="float to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_FLOAT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_48K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_48000_2ch_float>
+	<alg_chain_direct_play_88200_2ch_16bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_88_2K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_88_2K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="16bit to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_88_2K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_88_2K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_88200_2ch_16bit>
+	<alg_chain_direct_play_88200_2ch_32bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_88_2K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_88_2K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_88200_2ch_32bit>
+	<alg_chain_direct_play_88200_2ch_float>
+		<module description="float to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_88_2K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_FLOAT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_88_2K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_88_2K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_88_2K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_88200_2ch_float>
+	<alg_chain_direct_play_96000_2ch_16bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_96K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_96K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="16bit to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_96K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_96K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_96000_2ch_16bit>
+	<alg_chain_direct_play_96000_2ch_32bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_96K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_96K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_96000_2ch_32bit>
+	<alg_chain_direct_play_96000_2ch_float>
+		<module description="float to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_96K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_FLOAT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_96K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_96K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_96K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_96000_2ch_float>
+	<alg_chain_direct_play_176400_2ch_16bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_176_4K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_176_4K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="16bit to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_176_4K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_176_4K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_176400_2ch_16bit>
+	<alg_chain_direct_play_176400_2ch_32bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_176_4K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_176_4K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_176400_2ch_32bit>
+	<alg_chain_direct_play_176400_2ch_float>
+		<module description="float to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_176_4K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_FLOAT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_176_4K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_176_4K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_176_4K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_176400_2ch_float>
+	<alg_chain_direct_play_192000_2ch_16bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_192K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_192K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="16bit to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_192K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_192K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_192000_2ch_16bit>
+	<alg_chain_direct_play_192000_2ch_32bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_192K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_192K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_192000_2ch_32bit>
+	<alg_chain_direct_play_192000_2ch_float>
+		<module description="float to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_192K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_FLOAT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_192K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_192K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_192K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_192000_2ch_float>
+	<alg_chain_direct_play_384000_2ch_16bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_384K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_384K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="16bit to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_384K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_16_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_384K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_384000_2ch_16bit>
+	<alg_chain_direct_play_384000_2ch_32bit>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_384K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_384K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_384000_2ch_32bit>
+	<alg_chain_direct_play_384000_2ch_float>
+		<module description="float to 32bit">
+			<handle
+				lib = "/vendor/lib64/audio.extension.so"
+				itf = "get_module_formater"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_384K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_FLOAT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_384K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+		<module description="direct play pop">
+			<handle
+				lib = "/vendor/lib64/audio.custom.so"
+				itf = "get_module_pop"
+			/>
+			<config>
+				<input
+					sample_rate = "AUDIO_SAMPLE_RATE_384K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+				<output
+					sample_rate = "AUDIO_SAMPLE_RATE_384K"
+					channel_num = "2"
+					format = "AUDIO_FORMAT_PCM_32_BIT"
+					period = "PERIOD_NORMAL"
+					interlace = "ALL_INTERLACED"
+				/>
+			</config>
+		</module>
+	</alg_chain_direct_play_384000_2ch_float>
+</alg_store>

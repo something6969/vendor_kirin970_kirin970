@@ -1,0 +1,22 @@
+{
+  "Estimators": {
+    "APP":{
+      "Protectors": [
+        "DcVoltLimitator",
+        "NonDcVoltLimitator",
+        "DcCurLimitator",
+        "NonDcCurLimitator",
+        "SocLimitator",
+        "StatusLimitator"
+      ]
+    }
+  },
+  "Protectors": {
+    "DcVoltLimitator": {},
+    "NonDcVoltLimitator": {},
+    "DcCurLimitator": {},
+    "NonDcCurLimitator": {},
+    "SocLimitator": {},
+    "StatusLimitator": {}
+  }
+}

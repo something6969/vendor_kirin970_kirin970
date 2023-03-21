@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG_PARA>
+    <!-- bright: EV <= ev1 -->
+    <!-- normal: ev1 < EV <= ev2 -->
+    <!-- dark  : EV > ev2 -->
+    <!-- stable: abs(lens_position - serv_on_position) < deltaLens(um) -->
+    <!-- waitFrmNum : only enable in preview -->
+
+    <!-- first is main camera-->
+    <FIRST_THRESHOLD ev1="1024" ev2="36000" deltaLens="2" waitFrmNum="5" beginningSetOISCount="5" bokehZoomRatio="2.1">
+    </FIRST_THRESHOLD>
+    <!-- usedScene decide scenes used for influence ois mode and the priority of them,Z:Zoom,V:video,L:light-->
+    <FIRST_OIS_MODE usedScene = "V L" zoom="on" video="off" videoBokeh="off" captureBokeh="off"
+              previewBright="off" previewNormal="off" previewDark="on"
+              captureBright="off" captureNormal="off" captureDark="on">
+    </FIRST_OIS_MODE>
+
+    <!-- Second is tele camera-->
+    <SECOND_THRESHOLD ev1="1024" ev2="28672" deltaLens="2" waitFrmNum="5" beginningSetOISCount="5" bokehZoomRatio="2.1">
+    </SECOND_THRESHOLD>
+    <!-- usedScene decide scenes used for influence ois mode and the priority of them,Z:Zoom,V:video,L:light-->
+    <SECOND_OIS_MODE usedScene = "V Z" zoom="on" video="off" videoBokeh="on" captureBokeh="on"
+              previewBright="on" previewNormal="on" previewDark="on"
+              captureBright="on" captureNormal="on" captureDark="on">
+    </SECOND_OIS_MODE>
+</CONFIG_PARA>

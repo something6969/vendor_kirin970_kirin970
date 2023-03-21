@@ -1,0 +1,10 @@
+service virtualcamera-oneshot-hal-service /vendor/bin/hw/virtualcamera.oneshot.provider@2.4-service
+    interface android.hardware.camera.provider@2.4::ICameraProvider virtual/0
+    oneshot
+    disabled
+    class hal
+    user system
+    group camera system
+    ioprio rt 4
+    capabilities SYS_NICE
+    writepid /dev/stune/top-app/tasks

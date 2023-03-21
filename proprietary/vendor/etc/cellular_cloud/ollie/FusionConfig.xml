@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FusionConfig>
+    <mainSwitch>1</mainSwitch>
+    <codingType>
+        <wb>1</wb>
+        <evs>1</evs>
+        <nb>1</nb>
+        <cs>0</cs>
+    </codingType>
+    <callRat>
+        <volte>1</volte>
+        <vonr>0</vonr>
+    </callRat>
+    <!--/ms-->
+    <echoRetry>
+        <first>600</first>
+        <second>1000</second>
+        <third>1000</third>
+    </echoRetry>
+    <qoe>
+        <!-- ms -->
+        <evaluationPeriod>2000</evaluationPeriod>
+        <expectedMin>15</expectedMin>
+        <packetLossStartNat>2</packetLossStartNat>
+        <packetLossStartVoiceCopy>0</packetLossStartVoiceCopy>
+        <packetLossStopNat>1</packetLossStopNat>
+        <packetLossStopVoiceCopy>0</packetLossStopVoiceCopy>
+    </qoe>
+    <signal>
+        <!-- rsrp level -->
+        <signalLevelStartNat>2</signalLevelStartNat>
+        <signalLevelStartVoiceCopy>1</signalLevelStartVoiceCopy>
+    </signal>
+    <version>
+        <tunnel1>1</tunnel1>
+        <tunnel2>1</tunnel2>
+        <tunnel3>1</tunnel3>
+        <primaryLink>1</primaryLink>
+        <secondaryLink>1</secondaryLink>
+    </version>
+</FusionConfig>
